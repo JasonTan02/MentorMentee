@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "57673866494",
+    "project_id": "mentormentee-95905",
+    "storage_bucket": "mentormentee-95905.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57673866494:android:4d95ed2de0b029ef19d9af",
+        "android_client_info": {
+          "package_name": "com.example.hello_world"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57673866494-oh3crnu7fsomfr84h2dhobl2mk3bvq0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxGye0B7JBHF1RUBsP74uLYkpGHD3S9Ho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57673866494-oh3crnu7fsomfr84h2dhobl2mk3bvq0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
