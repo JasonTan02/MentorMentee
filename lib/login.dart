@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:hello_world/auth.dart';
 
 class MyLoginPage extends StatefulWidget {
   const MyLoginPage({Key? key, required this.title}) : super(key: key);
@@ -77,7 +79,11 @@ class _MyLoginPageState extends State<MyLoginPage> {
                       const InputDecoration(prefixIcon: Icon(Icons.security)),
                 ),
                 const SizedBox(height: 12),
-                ElevatedButton(onPressed: login, child: const Text('Login'))
+                ElevatedButton(onPressed: login, child: const Text('Login')),
+                const SizedBox(height: 12),
+                ElevatedButton(
+                    onPressed: const Authentication().signInWithGoogle(),
+                    child: const Text('Google Sign In'))
               ],
             ),
           )
