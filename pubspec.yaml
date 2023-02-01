@@ -32,6 +32,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_auth: ^4.2.5
   firebase_core: ^2.4.0
+  google_sign_in: ^5.4.4
   flutter:
     sdk: flutter
 
@@ -82,3 +83,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+assets:
+  - assets/
