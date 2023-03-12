@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:hello_world/home.dart';
-import 'package:hello_world/login.dart';
+import 'widgets/event_calendar/home.dart';
+import 'login.dart';
 
 class Authentication extends StatefulWidget {
   const Authentication({super.key});
@@ -34,7 +34,7 @@ class _AuthenticationState extends State<Authentication> {
             stream: FirebaseAuth.instance.authStateChanges(),
             builder: ((context, snapshot) {
               if (snapshot.hasData) {
-                return const Home();
+                return const HomePage();
               } else {
                 return const MyLoginPage(title: 'My Login Page');
               }
