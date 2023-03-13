@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'widgets/event_calendar/home.dart';
+import 'package:hello_world/Page/home.dart';
 import 'login.dart';
 
 class Authentication extends StatefulWidget {

@@ -78,12 +78,12 @@ class _MyLoginPageState extends State<MyLoginPage> {
                   decoration:
                       const InputDecoration(prefixIcon: Icon(Icons.security)),
                 ),
-                const SizedBox(height: 12),
+                /*const SizedBox(height: 12),
                 ElevatedButton(onPressed: login, child: const Text('Login')),
                 const SizedBox(height: 12),
                 ElevatedButton(
                     onPressed: const Authentication().signInWithGoogle(),
-                    child: const Text('Google Sign In'))
+                    child: const Text('Google Sign In'))*/
               ],
             ),
           )

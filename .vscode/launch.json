@@ -8,7 +8,7 @@
             "name": "hello_world",
             "request": "launch",
             "type": "dart",
-            "program": "lib/Testing/main.dart"
+            "program": "lib/main.dart"
         },
         {
             "name": "hello_world (profile mode)",
