@@ -15,11 +15,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   habit_database db = habit_database();
-  final _myBox = Hive.box("Habit_Database");
+  final _myBox = Hive.box("HABIT_DATABASE");
 
   @override
   void initState() {
-    if (_myBox.get("Current_Habit_List") == null) {
+    if (_myBox.get("CURRENT_HABIT_LIST") == null) {
       db.create_default_data();
     } else {
       db.loadData();
@@ -94,18 +94,19 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey,
       floatingActionButton:
           my_floating_action_button(onPressed: createNewHabit),
       body: ListView(
         children: [
           MonthSummary(
             datasets: db.heatMapDataSet,
-            startDate: _myBox.get("Start_Date"),
+            startDate: _myBox.get("START_DATE"),
           ),
           ListView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
+              itemCount: db.todaysHabitList.length,
               itemBuilder: (context, index) {
                 return HabitTile(
                   habitName: db.todaysHabitList[index][0],
